@@ -1,0 +1,50 @@
+{
+  "name": "@cabloy/front-empty",
+  "version": "5.0.75",
+  "description": "A vue3 empty framework with ioc",
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "zhennann <zhen.nann@icloud.com>",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && tsc --noEmit --project tsconfig.vue-tsc.json",
+    "preview": "vite preview",
+    "tsc": "vue-tsc --noEmit --project tsconfig.vue-tsc.json",
+    "lint": "eslint . --fix --ignore-path .gitignore"
+  },
+  "keywords": [
+    "nodejs",
+    "full-stack",
+    "workflow-engine",
+    "vue3",
+    "ioc",
+    "cabloy"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cabloy/cabloy-front.git"
+  },
+  "homepage": "https://github.com/cabloy/cabloy-front#readme",
+  "bugs": {
+    "url": "https://github.com/cabloy/cabloy-front/issues"
+  },
+  "dependencies": {
+    "@cabloy/front": "^5.0.58",
+    "vue": "^3.4.27",
+    "vue-router": "^4.3.2"
+  },
+  "devDependencies": {
+    "@cabloy/app-vite": "^1.0.58",
+    "@cabloy/lint": "^4.0.10",
+    "@types/node": "^20.12.12",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "sass": "^1.77.2",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11",
+    "vue-tsc": "^2.0.19"
+  },
+  "license": "MIT",
+  "gitHead": "595f70147ded1cd587da27a0ea985de1ec6858bf"
+}
