@@ -8,16 +8,16 @@ const __MenuData = [
     to: '/a/home/home',
   },
   {
-    title: 'State',
-    caption: 'ref, computed',
+    title: 'Counter',
+    caption: 'Counter',
     icon: '',
-    to: '/a/demo/state',
+    to: '/a/demo/counter',
   },
   {
-    title: 'Component',
-    caption: 'props, emits, slots',
+    title: 'Counter(Local Bean)',
+    caption: 'Counter(Local Bean)',
     icon: '',
-    to: '/a/demo/component',
+    to: '/a/demo/counter2',
   },
   {
     title: 'Github',
