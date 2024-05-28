@@ -1,5 +1,6 @@
-import { BeanControllerPageBase, Local, zz } from '@cabloy/front';
+import { BeanControllerPageBase, Local, Use, zz } from '@cabloy/front';
 import { ScopeModule } from '../../resource/this.js';
+import { Counter } from './counter.js';
 
 export const ParamsSchema = zz.object({});
 export type ParamsInput = zz.input<typeof ParamsSchema>;
@@ -11,7 +12,6 @@ export type QueryOutput = zz.output<typeof QuerySchema>;
 
 @Local()
 export class ControllerPageCounter2 extends BeanControllerPageBase<ScopeModule, QueryOutput, ParamsOutput> {
-  protected async __init__() {}
-
-  protected __dispose__() {}
+  @Use()
+  $$counter: Counter;
 }

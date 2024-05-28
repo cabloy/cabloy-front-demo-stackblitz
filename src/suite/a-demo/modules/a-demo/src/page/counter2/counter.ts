@@ -1,9 +1,14 @@
-import { BeanBase, Local } from '@cabloy/front';
-import { ScopeModule } from '../../resource/this.js';
+import { Local } from '@cabloy/front';
 
 @Local()
-export class Counter2Counter extends BeanBase<ScopeModule> {
-  protected async __init__() {}
+export class Counter {
+  count: number = 0;
 
-  protected __dispose__() {}
+  inrement() {
+    this.count++;
+  }
+
+  decrement() {
+    this.count--;
+  }
 }

@@ -11,7 +11,13 @@ export type QueryOutput = zz.output<typeof QuerySchema>;
 
 @Local()
 export class ControllerPageCounter extends BeanControllerPageBase<ScopeModule, QueryOutput, ParamsOutput> {
-  protected async __init__() {}
+  count: number = 0;
 
-  protected __dispose__() {}
+  inrement() {
+    this.count++;
+  }
+
+  decrement() {
+    this.count--;
+  }
 }

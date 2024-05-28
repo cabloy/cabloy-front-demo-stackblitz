@@ -7,6 +7,12 @@ export interface RenderPageCounter extends ControllerPageCounter {}
 @Local()
 export class RenderPageCounter extends BeanRenderBase<ScopeModule> {
   render() {
-    return <div></div>;
+    return (
+      <div class="text-center" style="font-size: 3vh">
+        <div>count: {this.count}</div>
+        <button onClick={() => this.inrement()}>Inrement</button>
+        <button onClick={() => this.decrement()}>Decrement</button>
+      </div>
+    );
   }
 }
